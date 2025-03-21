@@ -245,3 +245,80 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-bar {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+        padding: 10px; /* إضافة حشوة */
+    }
+
+    .header-space, .annotate, .manage, .status {
+        flex: 1; /* جعل العناصر تأخذ نفس العرض */
+        text-align: center; /* محاذاة النص في المنتصف */
+        margin-bottom: 10px; /* إضافة مسافة بين العناصر */
+    }
+
+    .status label {
+        margin-right: 0; /* إزالة الهامش */
+    }
+
+    .status select {
+        width: 100%; /* جعل حقل الاختيار يأخذ عرض 100% */
+        margin-right: 0; /* إزالة الهامش */
+    }
+
+    .icons {
+        padding: 0px 10px; /* تقليل الحشوة */
+    }
+
+    .icons i {
+        font-size: 20px; /* زيادة حجم الأيقونات */
+    }
+
+    .main-container {
+        padding: 20px 10px; /* تقليل الحشو */
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    }
+
+    .left-section, .right-section {
+        flex: 1; /* جعل كل قسم يأخذ نفس العرض */
+        margin-bottom: 20px; /* إضافة مسافة بين الأقسام */
+    }
+
+    .employee-image {
+        width: 100%; /* جعل الصورة تأخذ عرض 100% */
+        height: auto; /* السماح للارتفاع بالتكيف */
+    }
+
+    .contact-btn {
+        width: 100%; /* جعل الزر يأخذ عرض 100% */
+    }
+
+    .scroll-always, .scroll-always2 {
+        height: 200px; /* تقليل الارتفاع */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-bar {
+        height: auto; /* السماح للارتفاع بالتكيف */
+    }
+
+    .header-space, .annotate, .manage, .status {
+        flex: 1; /* جعل العناصر تأخذ نفس العرض */
+    }
+
+    .employee-details {
+        font-size: 10px; /* تقليل حجم الخط */
+    }
+
+    .activities-title {
+        font-size: 15px; /* تقليل حجم الخط */
+    }
+
+    .activities-tabs {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        gap: 10px; /* تقليل الفجوة */
+    }
+}
