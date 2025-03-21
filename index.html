@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ✅ الشريط العلوي -->
+    <div class="header-bar">
+        <div class="header-space"></div>
+        <div class="separator"></div>
+
+        <div class="annotate">
+            <p>Annotate</p>
+            <div class="icons">
+                <i class="far fa-file-alt"></i>
+                <i class="fas fa-edit"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa fa-list"></i>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="manage">
+            <p>Manage</p>
+            <div class="icons">
+                <i class="far fa-folder"></i>
+                <i class="far fa-save"></i>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="status">
+            <label>Set Hiring Stage</label> <br>
+            <select>
+                <option value="shortlisted">Shortlisted</option>
+                <option value="hired">Hired</option>
+                <option value="pending">Pending</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- ✅ الهيكل الأساسي -->
+    <div class="main-container">
+     
+        <!-- ✅ القسم الأيسر -->
+        <div class="left-section"> 
+            <div class="employment-status">
+               
+                
+                <div class="employee-meta">
+                    <div class="hired">
+                        <i class="fa-solid fa-circle-check"></i> Hired
+                    </div>
+                    <div><strong>Division</strong><br> <span>Technology</span> </div>
+                    <div><strong>Reporting to</strong> <br><span>Yousef Sawalha</span></div>
+                    <div><strong>Joining Date</strong> <br><span>25/09/2014</span></div>
+                    <div><strong>Offered Salary</strong><br> <span>740 JD</span> </div>
+                    <div> <i class="fa-solid fa-pen edit-icon"></i></div>
+                </div>
+            </div>
+            <!-- بيانات الموظف -->
+            <div class="employee-info">
+                <img src="./emp.jpg"Employee Image" class="employee-image">
+                <div class="employee-details">
+                    <p><strong>Yasmin</strong> <span class="reveal-name">(Reveal Full Name)</span></p>
+                    <p>Graphic Designer</p>
+                    <p class="company">Infoart printing & advertising</p>
+                    <p><strong>Location:</strong> <span class="emp-det-info">Amman, Jordan</span></p>
+                    <p><strong>Education:</strong> <span class="emp-det-info">Master's Degree, Graphic Design</span></p>
+                    <p><strong>Experience:</strong> <span class="emp-det-info">4 Years, 6 Months</span></p>
+                    <button class="contact-btn"><i class="fa-solid fa-envelope"></i> Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ القسم الأيمن -->
+        <div class="right-section scroll-always">
+            <div class="activities-title">Activities on CV</div>
+            <div class="activities-tabs ">
+                <span>All</span>
+                <span>Messages (2)</span>
+                <span>Notes (6)</span>
+                <span>Tags (2)</span>
+                <span>Attachments (1)</span>
+                <span>More</span>
+            </div>
+
+            <div class="activities-content">
+                <p>All content here...</p>
+                <div class="scroll-always2"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
