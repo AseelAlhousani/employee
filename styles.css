@@ -5,59 +5,30 @@ body {
     padding: 0;
 }
 
-/* ✅ الشريط العلوي */
+/* ✅ الشريط العلوي بدون ألوان إضافية */
 .header-bar {
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     width: 100%;
-    height: 90px;
-    border-bottom: 3px solid #ddd;
-    flex-wrap: wrap;
+    height: 70px;
+    padding: 10px 20px;
     justify-content: space-between;
-    padding: 0 20px;
-}
-
-.separator {
-    width: 1px;
-    height: 90px;
-    background-color: #ccc;
-}
-
-.icons {
-    padding: 0 10px;
+    background: none; /* إزالة الخلفية */
 }
 
 .icons i {
     font-size: 17px;
     margin: 5px;
     cursor: pointer;
-    color: #0F78CA;
+    color: #555; /* لون محايد */
 }
 
-/* ✅ تحسين الـ ريسبونسيف */
-@media (max-width: 991px) {
-    .separator { display: none; }
-}
-
+/* ✅ تحسين الريبونسيف */
 @media (max-width: 768px) {
     .header-bar {
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 10px;
-    }
-
-    .status {
-        text-align: center;
-        width: 100%;
-    }
-
-    .status label, .status select {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 5px 0;
     }
 
     .icons {
@@ -67,122 +38,55 @@ body {
     }
 }
 
-/* ✅ الهيكل الأساسي */
-.main-container {
-    display: flex;
+/* ✅ تحسين القسم الأيمن */
+.activities-section {
     padding: 20px;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-/* ✅ القسم الأيسر */
-.left-section {
-    flex: 2;
-}
-
-.employment-status {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.hired {
-    font-size: 14px;
-    color: green;
-}
-
-.hired i {
-    margin-right: 5px;
-}
-
-.employee-info {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    height: 70%;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.employee-image {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border: 1px solid #ddd;
-    margin: 20px;
-}
-
-.employee-details {
-    font-size: 12px;
-    padding-bottom: 25px;
-}
-
-.contact-btn {
-    background-color: #FBBE23;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-/* ✅ القسم الأيمن */
-.right-section {
-    flex: 1;
-    background: white;
-    padding: 15px;
 }
 
 .activities-title {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .activities-tabs {
     display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    color: black;
     gap: 15px;
-    margin-top: 10px;
-    border-bottom: 0.5px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-.scroll-always {
-    height: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border: 1px solid #ccc;
+.activities-tabs span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
 }
 
-/* ✅ إزالة الأسهم العلوية والسفلية من السكرول */
-.scroll-always::-webkit-scrollbar {
-    width: 8px;
+.activities-tabs span:hover {
+    background-color: #ddd;
 }
 
-.scroll-always::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
+.activities-content p {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-.scroll-always::-webkit-scrollbar-button {
-    display: none;
+.activities-content hr {
+    margin: 10px 0;
 }
 
-.scroll-always {
-    scrollbar-width: thin;
-    scrollbar-color: #ccc transparent;
+/* ✅ تحسين السكروول */
+.activities-content {
+    max-height: 300px;
+    overflow-y: auto;
 }
 
-@media (max-width: 576px) {
-    .activities-tabs {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.activities-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.activities-content::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 3px;
 }
