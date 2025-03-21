@@ -245,34 +245,3 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
-/* ✅ استجابة التصميم */
-@media (max-width: 768px) {
-    .header-bar {
-        display: none; /* إخفاء الشريط العلوي عند الشاشات الصغيرة */
-    }
-
-    .main-container {
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    .left-section, .right-section {
-        flex: 1;
-        padding: 10px;
-    }
-
-    .activities-tabs {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .activities-content {
-        flex-direction: column;
-    }
-
-    .scroll-always, .scroll-always2 {
-        width: 100%;
-        padding-left: 0;
-    }
-}
